@@ -1,0 +1,32 @@
+[
+    {
+      "carname": "Tesla",
+      "carmodel": "Model X",
+      "car-img": "Imgs/featured1.png",
+      "price": "$ 175,000"
+    },
+    {
+      "carname": "Tesla",
+      "carmodel": "Model 3",
+      "car-img": "Imgs/featured2.png",
+      "price": "$ 175,000"
+    },
+    {
+      "carname": "Audi",
+      "carmodel": "E-tron",
+      "car-img": "Imgs/featured3.png",
+      "price": "$ 175,000"
+    },
+    {
+      "carname": "Porsche",
+      "carmodel": "Boxster 987",
+      "car-img": "Imgs/featured5.png",
+      "price": "$ 175,000"
+    },
+    {
+      "carname": "Porsche",
+      "carmodel": "Panamera",
+      "car-img": "Imgs/featured6.png",
+      "price": "$ 175,000"
+    }
+  ]

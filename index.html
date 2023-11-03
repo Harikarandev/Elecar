@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecar</title>
+    <link rel = "icon" href ="Imgs/title-icon.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/owl-carousel/owl.carousel.js"></script>
+    <script src="/owl-carousel/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img class="bg-circle-1" src="Imgs/BG_circle.png" alt="">
+    <img class="bg-circle-2" src="Imgs/BG_circle.png" alt="">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="navbarbrand">
+
+                    <img src="Imgs/steering-wheel.png" alt=""><a class="navbar-brand" href="#">Elecar</a>
+                </div>
+
+                <button class="navbar-toggler" id="open-nav-button" type="button"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#futureTech">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popular">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featured_cars">Featured</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <div class="nav-content">
+            <span class="close-icon">&times;</span>
+                <ul class="nav-links">
+                <li><a href="#" onclick="hidenav()">HOME</a></li>
+                <li><a href="#futureTech" onclick="hidenav()">ABOUT</a></li>
+                <li><a href="#popular" onclick="hidenav()">POPULAR</a></li>
+                <li><a href="#featured_cars" onclick="hidenav()">FEATURED</a></li>
+            </ul>  
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="wrapper">
+            <button id="scrollTop" class="scrolltop">↑</button>
+            <div class="slider">
+                <div class="slider-heading">
+
+                    <h1>Choose The Best Car</h1>
+                    <h5>Porsche Mission E</h5>
+                </div>
+                <div class="carousel-caption">
+
+                    <img src="Imgs/ri_flashlight-fill.png" alt="">
+                    <p>Electric car</p>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <input type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></input>
+                        <input type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></input>
+                        <input type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></input>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imgs/Front End Rask.png" class=" w-75" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imgs/Car_top.png" class=" w-75" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imgs/brand3.png" class=" w-75" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-specs">
+                <div class="container">
+                    <div class="row">
+                        <div class="spec-items  col-4 col-lg-4">
+                            <div class="spec-item-img">
+                                <img src="Imgs/Temp_icon.png" alt="Temperature Icon">
+                            </div>
+                            <span class="spec-value" id="temperature">24°C</span>
+                            <span class="spec-label">Temperature</span>
+                        </div>
+                        <div class="spec-items col-4 col-lg-4">
+                            <span class="circle-km">Km</span>
+                            <span class="spec-value" id="temperature">873</span>
+                            <span class="spec-label">Mileage</span>
+                        </div>
+                        <div class="spec-items col-4  col-lg-4">
+                            <div class="spec-item-img">
+                                <img src="Imgs/Flash.png" alt="Temperature Icon">
+                            </div>
+                            <span class="spec-value" id="temperature">94%</span>
+                            <span class="spec-label">Battery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#futureTech"><div class="start wow pulse" data-wow-iteration="3">
+                <img src="Imgs/Start.png" alt="">
+            </div></a>
+            
+            <div class="future-tech" id="futureTech">
+                <div class="container">
+                    <div class="row">
+                        <div class="future-tech-img col-12 col-md-6 col-lg-6 col-xl-6 wow slideInLeft" data-wow-delay="0.2s">
+                            <img src="Imgs/Steerin.png" alt="">
+                            <div class="future-tech-info">
+                                <span>2.500+</span>
+                                <br>
+                                <span>
+                                    Supercharges placed
+                                    along popular routes
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="future-tech-content col-12 col-md-6 col-lg-6 col-xl-6 wow slideInRight" data-wow-delay="0.2s">
+                            <h3>Machines With <br>
+                                Future Technology</h3>
+                            <p>See the future with high-performance electric cars
+                                produced by renowned brands. They feature futuristic
+                                builds and designs with new and innovative platforms
+                                that last a long time.
+                            </p>
+                            <button class="know-more btn btn-primary">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-menu mb-3 " id="popular">
+                <h3 class="text-center">Choose Your Electric Car
+                    <br>
+                    Of The Porsche Brand
+                </h3>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-8 col-md-8 col-lg-8 col-xl-8 offset-2">
+                            <div class="owl-carousel owl-themer">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card-box ">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Turbo S</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/brand1.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 175,000
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <div class="card-box">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Taycan</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/Porsche-Taycan 1.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 114,900
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <div class="card-box">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Turbo S Cross</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/brand3.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 175,900
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <div class="card-box">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Turbo S</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/brand1.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 175,000
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <div class="card-box">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Turbo S Cross</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/brand3.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 175,000
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <div class="card-box">
+                                    <img src="Imgs/BG_circle.png" alt="">
+                                    <div class="menu-card">
+
+                                        <div class="card-heading">
+                                            <h3>Porsche</h3>
+                                            <span>Turbo Taycan</span>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="Imgs/Porsche-Taycan 1.png" alt="">
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="d-flex" style="gap: 20px;">
+                                                <div>
+                                                    <i class=" fas fa-regular fa-gauge-high"></i> 3.7 Sec
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-regular fa-chart-line"></i> 356 Km/h
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-gas-pump"></i> Electric
+                                            </div>
+                                        </div>
+                                        <div class="card-actions">
+                                            $ 175,000
+                                        </div>
+                                        <div class="card-shop">
+                                            <img src="Imgs/Shop.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="more-features mt-5 mb-3 text-center">
+                <div class="container">
+                    <div class="w-auto">
+                        <h3>More Features</h3>
+                        <img src="Imgs/Car_map.png" alt="" id="zoomImage">
+                        <div class="more-features-info info-1">
+                            <span>800v</span>
+                            <br>
+                            <span>
+                                Turbo <br>
+                                Charging
+                            </span>
+                        </div>
+                        <div class="more-features-info info-2">
+                            <span>350</span>
+                            <br>
+                            <span>
+                                Km <br>
+                                Range
+                            </span>
+                        </div>
+                        <div class="more-features-info info-3">
+                            <span>480</span>
+                            <br>
+                            <span>
+                                Km <br>
+                                Travel
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-luxury mb-3" id="featured_cars">
+                <div class="text-center">
+                    <h4>Featured Luxury Cars
+                    </h4>
+                </div>
+                <div class="featured-options mt-5">
+                    <div class="option-box selected" data-value="All">
+                        All
+                    </div>
+                    <div class="option-box" data-value="Tesla">
+                        <img src="Imgs/logo3.png" alt="Tesla" >
+                    </div>
+                    <div class="option-box" data-value="Audi">
+                        <img src="Imgs/logo2.png" alt="Audi" >
+                    </div>
+                    <div class="option-box" data-value="Ferrai">
+                        <img src="Imgs/logo1.png" alt="Ferrai" >
+                    </div>
+                </div>
+                <div class="container featured-cars mt-5">
+
+                    
+                </div>
+            </div>
+            <div class="board mt-5 mb-4">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="board-box col-12 col-lg-6">
+                            <h3>Do You Want To Receive <br>
+                                Special Offers?</h3>
+                            <p>Be the first to receive all the information about
+                                our products and new cars by email by subscribing
+                                to our mailing list.
+                            </p>
+                            <button class="subscribe btn btn-primary">Subscribe Now</button>
+                        </div>
+                        <div class="board-box col-12 col-lg-6">
+                            <img src="Imgs/Porsche-Taycan 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands">
+                <div class="brand-box">
+                    <img src="Imgs/logo1.png" alt="">
+                    <img src="Imgs/logo2.png" alt="">
+                    <img src="Imgs/logo3.png" alt="">
+                    <img src="Imgs/logo4.png" alt="">
+                    <img src="Imgs/logo5.png" alt="">
+                    <img src="Imgs/logo6.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer mt-4">
+            <img class="footer-bg-1" src="Imgs/BG_circle.png" alt="">
+            <img class="footer-bg-2" src="Imgs/BG_circle.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="about">
+                            <div class="footerbrand">
+                                <img src="Imgs/steering-wheel.png" alt=""><a class="footer-brand" href="#">Elecar</a>
+                            </div>
+                            <p>We offer the best electric cars of
+                                the most recognized brands in
+                                the world.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="company">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#futureTech">About</a></li>
+                                <li><a href="">Cars</a></li>
+                                <li><a href="">History</a></li>
+                                <li><a href="">Shop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="">Request a quote</a></li>
+                                <li><a href="">Find a dealer</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="follow">
+                            <h4>Follow us</h4>
+                            <div class="socio-links">
+                                <img src="Imgs/ri_facebook-fill.png" alt="">
+                                <img src="Imgs/ri_instagram-line.png" alt="">
+                                <img src="Imgs/ri_twitter-line.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-text ">
+                    &copy; Bedimcode. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
